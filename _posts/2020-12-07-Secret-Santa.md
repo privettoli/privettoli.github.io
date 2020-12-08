@@ -10,7 +10,7 @@ Secret Santa is a Western Christmas tradition in which members of a group or com
 Many people would write names on small pieces of paper (like sticky notes) and put them into a Santa hat. 
 Then every family member will pick one of the notes to find whom they should give a gift this year.
 
-![Screen Shot 2020-12-07 at 8.30.20 PM.png]({{site.baseurl}}/_posts/Screen Shot 2020-12-07 at 8.30.20 PM.png)
+![Screen Shot 2020-12-07 at 8.30.20 PM.png]({{site.baseurl}}/images/2020-12-07-Secret-Santa/Screen Shot 2020-12-07 at 8.30.20 PM.png)
 
 **Even though we shuffled the names in the hat, there's a chance that we'll pick ourselves from the Santa's hat**.
 So let's say that Barbara picks herself, what should she do? Usually, people would put back the note with their name and try again. But now we know that Barbara is not picked yet by anyone.
@@ -24,11 +24,11 @@ Many people enjoy the process, so it might not be a problem at all, but let's th
 
 Instead of names, we can prepare cards with indexes, to look like 1->2, 2->3, … n->1, where first number would be the number issued to the person who picked that card, and the second number is whom they should give a gift.
 
-![Screen Shot 2020-12-07 at 8.47.38 PM.png]({{site.baseurl}}/_posts/Screen Shot 2020-12-07 at 8.47.38 PM.png)
+![Screen Shot 2020-12-07 at 8.47.38 PM.png]({{site.baseurl}}/images/2020-12-07-Secret-Santa/Screen Shot 2020-12-07 at 8.47.38 PM.png)
 
 Then we can shuffle the cards in the hat and let each participant pick a card.
 
-![Screen Shot 2020-12-07 at 8.55.44 PM.png]({{site.baseurl}}/_posts/Screen Shot 2020-12-07 at 8.55.44 PM.png)
+![Screen Shot 2020-12-07 at 8.55.44 PM.png]({{site.baseurl}}/images/2020-12-07-Secret-Santa/Screen Shot 2020-12-07 at 8.55.44 PM.png)
 
 At this moment we might ask everyone to fill the index with their names (based on the first number and not show the second number to anybody):
 1 - Barbara
@@ -79,4 +79,4 @@ public Map<Person, Person> matchMembers(List<Person> familyMembers) {
 ```
 
 Result:
-![Screen Shot 2020-12-07 at 9.28.22 PM.png]({{site.baseurl}}/_posts/Screen Shot 2020-12-07 at 9.28.22 PM.png)
+![Screen Shot 2020-12-07 at 9.28.22 PM.png]({{site.baseurl}}/images/2020-12-07-Secret-Santa/Screen Shot 2020-12-07 at 9.28.22 PM.png)
