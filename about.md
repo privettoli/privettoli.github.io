@@ -6,11 +6,11 @@ published: true
 ---
 Software Engineer
 
-Java | Spring | WebFlux | RDBMS & NoSQL | JMS & Kafka
-TypeScript | Angular
-CloudFoundry | OpenShift
-ELK | Prometheus & Grafana | Splunk | Jaeger
-JIRA | PivotalTracker | Confluence
+Backend: Java | Spring | WebFlux | RDBMS | NoSQL
+Frontend: TypeScript | Angular
+PaaS: CloudFoundry | OpenShift | Kubernetes
+Observability: ELK | Prometheus | Grafana | Splunk | Jaeger
+Project: JIRA | PivotalTracker | Confluence
 
 ### About Anatolii
 
