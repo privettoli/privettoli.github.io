@@ -3,30 +3,30 @@ published: true
 ---
 ## Secret Santa Problem
 
-Secret Santa is a Western Christmas tradition in which members of a group or community are randomly assigned a person to whom they give a gift. The identity of the gift giver is to remain a secret and should not be revealed.
+Secret Santa is a Western Christmas tradition in which members of a group or a community are randomly assigned a person to whom they give a gift. The identity of the gift giver is to remain a secret and should not be revealed, that's why it's called secret Santa!
 
 ### Analog Edition
 
-Many people would write names on small pieces of paper (like sticky notes) and put them into a Santa hat. 
-Then every family member will pick one of the notes to find whom they should give a gift this year.
+People would write names on small pieces of paper (like sticky notes) and put them in a Santa hat. 
+Then every participating member will pick one of the notes to find out whom they should be giving a gift  this year.
 
 ![Screen Shot 2020-12-07 at 8.30.20 PM.png]({{site.baseurl}}/images/2020-12-07-Secret-Santa/Screen Shot 2020-12-07 at 8.30.20 PM.png)
 
-**Even though we shuffled the names in the hat, there's a chance that we'll pick ourselves from the Santa's hat**.
-So let's say that Barbara picks herself, what should she do? Usually, people would put back the note with their name and try again. But now we know that Barbara is not picked yet by anyone.
-This might be okay if we just started the game, but what if there were only 2 notes left? For example, Jennifer had to put her name back, and then Karen picked the last name - we know it's Jennifer.
+**Even though we shuffled the names in the hat, there's a chance that we'll pick our name**.
+So let's say that Barbara picks herself, what should she do? Usually, people would put back the note with their name and try again. But now we know that Barbara is not picked by anyone.
+This might be okay if we just started the game, but what if there were only 2 notes left? For example, if Jennifer had to put her name back, and then Karen picked the last name - we know she picked Jennifer.
 It's not a randomized anonymous assignment anymore…
 
 ### How do we solve this problem?
 Well… we can restart the entire game every time somebody picks their own name. As you probably already figured out, it might take quite some time.
 
-Many people enjoy the process, so it might not be a problem at all, but let's think how we can solve this small inefficiency…
+**Let's figure out how we can solve this small inefficiency…**
 
-Instead of names, we can prepare cards with indexes, to look like 1->2, 2->3, … n->1, where first number would be the number issued to the person who picked that card, and the second number is whom they should give a gift.
+Instead of names, we can prepare cards with indexes, to look like this: 1-> 2, 2-> 3, 3-> 1, where the first number would be the number issued to the person who picked that card, and the second number is the person who will be receiving their gift.         
 
 ![Screen Shot 2020-12-07 at 8.47.38 PM.png]({{site.baseurl}}/images/2020-12-07-Secret-Santa/Screen Shot 2020-12-07 at 8.47.38 PM.png)
 
-Then we can shuffle the cards in the hat and let each participant pick a card.
+Then we shuffle the cards in the hat and let each participant pick a card.
 
 ![Screen Shot 2020-12-07 at 8.55.44 PM.png]({{site.baseurl}}/images/2020-12-07-Secret-Santa/Screen Shot 2020-12-07 at 8.55.44 PM.png)
 
@@ -39,7 +39,7 @@ At this moment we might ask everyone to fill the index with their names (based o
 6 - Karen
 7 - Jennifer
 
-Now, everybody knows for whom they're a Secret Santa this year:
+Now, everybody knows who they will be giving a gift to this year:
 - William -> Richard
 - Barbara -> Lisa
 - Jennifer -> Barbara
@@ -52,7 +52,7 @@ Now, everybody knows for whom they're a Secret Santa this year:
 
 Now, in the era of COVID, we might want to digitalize this game, here's where I'd to take a look into [Sattolo's shuffling algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Sattolo%27s_algorithm).
 
-It's just like the regular Collections.shuffle() but guarantees that every member will have new position in the shuffled list.
+It's just like the regular Collections.shuffle() but this way it guarantees that every member will have new position in the shuffled list.
 
 ```java
 private <T> List<T> shuffle(List<T> list) {
