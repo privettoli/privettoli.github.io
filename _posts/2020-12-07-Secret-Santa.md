@@ -5,7 +5,7 @@ published: true
 
 Secret Santa is a Western Christmas tradition in which members of a group or community are randomly assigned a person to whom they give a gift. The identity of the gift giver is to remain a secret and should not be revealed.
 
-### Analog Edition12345
+### Analog Edition
 
 Many people would write names on small pieces of paper (like sticky notes) and put them into a Santa hat. 
 Then every family member will pick one of the notes to find whom they should give a gift this year.
